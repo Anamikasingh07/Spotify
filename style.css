@@ -1,0 +1,117 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: aliceblue;
+    font-family: 'Varela Round', sans-serif;
+}
+
+/* Navbar */
+nav {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: black;
+    color: aliceblue;
+    height: 65px;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+nav ul li {
+    padding: 20px;
+    cursor: pointer;
+}
+
+/* Background Image for Entire Container */
+.container {
+    min-height: 72vh;
+    width: 70%;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: black;
+    border-radius: 12px;
+
+    /* Set Full Background Image */
+    background-image: url('images/logo.png');
+    background-size: cover; /* Cover entire area */
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+
+
+/* Song List */
+.songItemContainer {
+    margin-top: 20px;
+}
+.songItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+.songItem:hover {
+    background-color: #f1f1f1;
+}
+.songItem img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+/* Progress Bar */
+.bottom {
+    position: sticky;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#myProgressBar {
+    width: 80%;
+    height: 6px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+/* Media Controls */
+.icons {
+    margin-top: 10px;
+}
+.icons i {
+    color: white;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.icons i:hover {
+    color: #1db954;
+}
+
+/* Song Info */
+.songInfo {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.songInfo img {
+    width: 40px;
+    margin-right: 10px;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
